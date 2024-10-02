@@ -1,7 +1,7 @@
 programa
 {
 	funcao inicio(){
-		escreva("Hello world!\n") //Mostra um texto
+		escreva("Hello world!\n") //Mostra
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -9,7 +9,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 74; 
+ * @POSICAO-CURSOR = 70; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
