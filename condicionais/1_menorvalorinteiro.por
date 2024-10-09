@@ -15,7 +15,22 @@ programa
 		escreva ("\nInsira o terceiro número: ")
 		leia(var3)
 
-		
+		se (var1 < var2) {
+			se (var1 < var3){
+				escreva("\n" + var1 + " é menor.")
+			}
+			senao{
+				escreva("\n" + var3 + " é menor.")
+			}
+		}
+		senao {
+			se (var2 < var3){
+				escreva("\n" + var2 + " é menor.")
+			}
+			senao{
+				escreva("\n" + var3 + " é menor.")
+			}
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 317; 
+ * @POSICAO-CURSOR = 538; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
