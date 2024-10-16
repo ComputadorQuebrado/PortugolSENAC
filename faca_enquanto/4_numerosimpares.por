@@ -11,10 +11,17 @@ programa
 		inteiro num1,num2=1
 		escreva("Digite um número inteiro positivo: ")
 		leia(num1)
-		enquanto(num2<=num1)
+		se(num1<=0)
 		{
+			escreva("\nErro! Número inválido!")
+		}
+		senao
+		{
+			enquanto(num2<=num1)
+			{
 			escreva("\n",num2)
 			num2=num2+2
+			}
 		}
 	}
 }
@@ -23,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 294; 
+ * @POSICAO-CURSOR = 388; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
