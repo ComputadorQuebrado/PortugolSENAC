@@ -8,7 +8,7 @@ programa
 	funcao inicio()
 	{
 		inteiro num=0,conta,soma=0
-		para(conta=0;conta<=100;conta++)
+		para(conta=1;conta<=100;conta++)
 		{
 			num=num+1
 			soma=soma+num
@@ -21,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 199; 
+ * @POSICAO-CURSOR = 145; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
