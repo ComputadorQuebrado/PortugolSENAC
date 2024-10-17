@@ -13,11 +13,10 @@ programa
 		leia(num1)
 		se(num1>0)
 		{
-			escreva("\n",fib2)
-			enquanto ((fib3+fib1)<num1)
+			enquanto (fib3<num1)
 			{
+			escreva("\n",fib2)
 			fib3=fib1+fib2
-			escreva("\n",fib3)
 			fib1=fib2
 			fib2=fib3
 			}
@@ -32,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 319; 
+ * @POSICAO-CURSOR = 290; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
