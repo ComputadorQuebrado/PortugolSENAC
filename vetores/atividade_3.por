@@ -22,6 +22,11 @@ programa
 		{
 			leia(senha[i])
 		}
+		escreva("\n")
+		para(i=0;i<6;i++)
+		{
+			escreva(senha[i])
+		}
 		para(i=0;i<6;i++)
 		{
 			se(senha[i]=='a')
@@ -57,6 +62,7 @@ programa
 				}
 			}
 		}
+		escreva("\n")
 		para(i=0;i<6;i++)
 		{
 			escreva(senha[i])
@@ -68,7 +74,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1126; 
+ * @POSICAO-CURSOR = 1157; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
