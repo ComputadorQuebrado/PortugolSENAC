@@ -15,7 +15,7 @@ programa
 		{
 			leia(voltas[i])
 		}
-		para(i=5;i>0;i--)
+		para(i=5;i>=0;i--)
 		{
 			escreva("\n",voltas[i])
 		}
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 457; 
+ * @POSICAO-CURSOR = 431; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
