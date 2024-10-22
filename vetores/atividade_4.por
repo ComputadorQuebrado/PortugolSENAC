@@ -7,35 +7,36 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia jogadores[11]
-		inteiro gols[11],i,o
+		cadeia jogadores[11],artilheiro
+		inteiro gols[11],i,golsartilheiro
 
 		para(i=0;i<11;i++)
 		{
 			escreva("Digite o nome do seu jogador: ")
 			leia(jogadores[i])
-			escreva("\nInforme quantos gols seu jogador fez no último jogo: ")
+			escreva("\nInforme quantos gols seu jogador fez no último jogo: ")
 			leia(gols[i])
 		}
+		artilheiro=jogadores[0]
+		golsartilheiro=gols[0]
 		para(i=0;i<11;i++)
 		{
-			o=0
-			para(o=0;o<11;o++)
+			se(golsartilheiro<gols[i])
 			{
-				se(gols[i]>gols[o])
-				{	
-					escreva("O artilheiro do time é ",jogadores[i],", com ",gols[i]," gols.")
-				}
+				artilheiro=jogadores[i]
+				golsartilheiro=gols[i]
 			}
 		}
+		escreva("O artilheiro do time foi ",artilheiro,", com exatamente ",golsartilheiro," gols.")
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 679; 
+ * @POSICAO-CURSOR = 595; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
