@@ -7,23 +7,59 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro x,y,i,j
-		logico poltrona[14][3]
+		inteiro x,y,i,j,poltrona[14][3]={{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}
 		caracter confirma
 
-		escreva("Olá! Informe qual poltrona você quer reservar.")
+		escreva("Olá! Informe qual poltrona você quer reservar.\n")
+		para(i=0;i<14;i++)
+		{
+			para(j=0;j<3;j++)
+			{
+				escreva(poltrona[i][j]," ")
+			}
+			escreva("\n")
+		}
 		escreva("\nInforme o número da poltrona(1 a 14): ")
 		leia(x)
+		x=x-1
 		escreva("\nInforme a fileira(1 a 3): ")
 		leia(y)
+		y=y-1
 		
-		poltrona[x][y]=verdadeiro
+		poltrona[x][y]=1
 		x=0
 		y=0
 
-		escreva("\nReserva confirmada! Deseja reservar outro assento? (S ou N)")
+		escreva("\nReserva confirmada! Deseja reservar outro assento? (S ou N)\n")
+		leia(confirma)
+		
+		enquanto((confirma=='s')ou(confirma=='S'))
+		{
+			para(i=0;i<14;i++)
+			{
+				para(j=0;j<3;j++)
+				{
+					escreva(poltrona[i][j]," ")
+				}
+				escreva("\n")
+			}
+			escreva("\nInforme o número da poltrona(1 a 14): ")
+			leia(x)
+			x=x-1
+			escreva("\nInforme a fileira(1 a 3): ")
+			leia(y)
+			y=y-1
+
+			poltrona[x][y]=1
+			x=0
+			y=0
+			escreva("\nReserva confirmada! Deseja reservar outro assento? (S ou N)\n")
+			leia(confirma)
+		}
+		escreva("\nAssentos reservados.")
 	}
 }
+
 /*
  * 		para(x=0;x<limite_linha;x++)
 		{
@@ -47,7 +83,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 623; 
+ * @POSICAO-CURSOR = 1283; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
